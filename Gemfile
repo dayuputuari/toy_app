@@ -11,6 +11,9 @@ gem 'jquery-rails'
 gem 'bcrypt', '3.1.12'
 # Use bootstrap
 gem 'bootstrap-sass', '3.3.7'
+# Pagination
+gem 'will_paginate',           '3.1.6'
+gem 'bootstrap-will_paginate', '1.0.0'
 # Use assert template
 gem 'rails-controller-testing'
 # Use sqlite3 as the database for Active Record
@@ -47,6 +50,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Faker data generator
+  gem 'faker'
 end
 
 group :development do
